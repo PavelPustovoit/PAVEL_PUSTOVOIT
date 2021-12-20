@@ -1,0 +1,16 @@
+{
+  "groups": [],
+  "properties": [
+    {
+      "name": "com.restdropb.restdb.accesstoken",
+      "type": "java.lang.String",
+      "description": "A description for 'com.restdropb.restdb.accesstoken'"
+    },
+    {
+      "name": "com.restdropb.restdb.dropboxent.IDropBoxServ",
+      "type": "java.lang.String",
+      "description": "A description for 'com.restdropb.restdb.dropboxent.IDropBoxServ'"
+    }
+  ],
+  "hints": []
+}

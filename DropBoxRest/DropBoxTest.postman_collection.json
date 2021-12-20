@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "84869b7c-c5f1-4d28-ad00-4f56f67df8db",
+		"name": "DropBoxTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetListFiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getfiles?nameapp=app_test_pqm&token=_pKlXmbNMjQAAAAAAAAAAaYEpIwohK0Oi85baKzTXYxKYGlbcAFCX1Fz5jcMwTYV&folder=",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getfiles"
+					],
+					"query": [
+						{
+							"key": "nameapp",
+							"value": "app_test_pqm"
+						},
+						{
+							"key": "token",
+							"value": "_pKlXmbNMjQAAAAAAAAAAaYEpIwohK0Oi85baKzTXYxKYGlbcAFCX1Fz5jcMwTYV"
+						},
+						{
+							"key": "folder",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nameapp",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "token",
+							"value": "_pKlXmbNMjQAAAAAAAAAAaYEpIwohK0Oi85baKzTXYxKYGlbcAFCX1Fz5jcMwTYV",
+							"type": "text"
+						},
+						{
+							"key": "tofolder",
+							"value": "/Test",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/J:/Temp/test_upl.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9093/upload",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"upload"
+					],
+					"query": [
+						{
+							"key": "nameapp",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "token",
+							"value": "_pKlXmbNMjQAAAAAAAAAAaYEpIwohK0Oi85baKzTXYxKYGlbcAFCX1Fz5jcMwTYV",
+							"disabled": true
+						},
+						{
+							"key": "tofolder",
+							"value": "Test",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9093?nameapp&token=E1J6QGtMTPgAAAAAAAAAAS4EOHAMJu3_UEJ8CUjXvQLtb_Y9cRdQEeeK2vkTpaDD&fromfolder=/Test&file=test_upl.txt",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"query": [
+						{
+							"key": "nameapp",
+							"value": null
+						},
+						{
+							"key": "token",
+							"value": "E1J6QGtMTPgAAAAAAAAAAS4EOHAMJu3_UEJ8CUjXvQLtb_Y9cRdQEeeK2vkTpaDD"
+						},
+						{
+							"key": "fromfolder",
+							"value": "/Test"
+						},
+						{
+							"key": "file",
+							"value": "test_upl.txt"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
