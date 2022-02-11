@@ -3,5 +3,4 @@ My D&amp;T course
 
 Selenium
 
-I tried to create .jar execute file, but I worry it will not work in other machine. 
-I add .java files of my project. I also used Maven, so I didn't setProperties for webDriver, but I left it in my Task class.
+I created project as maven, so all the dependencies are already there. On my Linux I don't need to write the path to the driver, but on Windows it requires. So you can write path to the Chromium driver if needed in Task.java System.setProperty. 
